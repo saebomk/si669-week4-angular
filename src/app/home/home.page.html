@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Birthday Town</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div *ngIf="name !== 'user'; else welcome">
+      <h1>Hi {{name}}!</h1>
+        <br/>
+      <h2>It is <span class="notBirthday">not</span> your birthday!</h2>
+  </div>
+
+  <ng-template #welcome>
+    <h1>This is welcome page</h1>
+  </ng-template>
+
+</ion-content>
+
+
+<ion-footer>
+    <ion-toolbar>
+      <ion-button shape="round"
+        color="primary"
+        (click)="resetData()"
+        fill="outline">
+        Reset Profile
+      </ion-button>
+
+      <ion-button shape="round"
+        color="primary"
+        fill="outline"
+        (click)="goToAboutMe()">Edit Profile
+      </ion-button>
+    </ion-toolbar>
+</ion-footer>

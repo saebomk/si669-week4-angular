@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Almost Done</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>Confirm Details</ion-list-header>
+
+    <ion-row>
+      <ion-col col-2>
+      <ion-item>
+        <ion-label class="label-title">Name</ion-label>
+        <p>{{name}}</p>
+      </ion-item>
+      </ion-col>
+  </ion-row>
+
+    <ion-row>
+      <ion-col col-2>
+        <ion-item>
+          <ion-label class="label-title">Birthday</ion-label>
+          <p>{{birthMonth}}, {{birthDay}}</p>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-2>
+        <ion-item>
+          <ion-label class="label-title">Cake</ion-label>
+          <p>{{cakeType}} with {{frosting}} frosting</p>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+      <ion-row>
+      <ion-col col-2>
+        <ion-item>
+          <ion-label class="label-title">Gift Ideas</ion-label>
+          <p>Books, shoes, ...</p>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+      <ion-button shape="round"
+        color="primary"
+        fill="outline"
+        (click)="SaveAndgoBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+        Back
+      </ion-button>
+
+      <ion-button shape="round"
+        color="primary"
+        fill="outline"
+        (click)="SaveAndgoToHome()">Finish
+      </ion-button>
+    </ion-toolbar>
+</ion-footer>
